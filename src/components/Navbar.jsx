@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 
@@ -36,7 +36,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#F8F7F4]/85 backdrop-blur-md border-b border-[#E5E3DD] py-3 shadow-xs'
+          ? 'bg-canvas backdrop-blur-md border-b border-line py-3 shadow-xs'
           : 'bg-transparent py-5'
       }`}
     >
@@ -44,30 +44,30 @@ export default function Navbar() {
         {/* Wordmark Logo */}
         <a
           href="#"
-          className="group flex items-center text-xl sm:text-2xl font-bold tracking-tight font-heading text-[#171717]"
+          className="group flex items-center text-xl sm:text-2xl font-bold tracking-tight font-heading text-[rgb(23,23,23)]"
           data-cursor="Home"
         >
-          <span className="text-[#E76F51] transition-transform duration-300 group-hover:scale-125 inline-block mr-[2px]">
-            .
+          <span className="text-[rgb(231,111,81)] transition-transform duration-300 group-hover:scale-125 inline-block mr-0.5">
+            A
           </span>
-          OXbash
+        maka
         </a>
 
-        {/* Desktop Nav Links */}
+        
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link, idx) => (
             <a
               key={link.name}
               href={link.href}
-              className="relative text-sm font-medium text-[#171717] hover:text-[#171717] transition-colors py-1 font-body"
+              className="relative text-sm font-medium text-[rgb(23,23,23)] hover:text-[rgb(23,23,23)] transition-colors py-1 font-body"
               onMouseEnter={() => setHoveredIndex(idx)}
               onMouseLeave={() => setHoveredIndex(null)}
               data-cursor="Go"
             >
               {link.name}
-              {/* Animated underline drawing left to right */}
+              
               <motion.span
-                className="absolute bottom-0 left-0 h-[2px] w-full bg-[#E76F51] origin-left"
+                className="absolute bottom-0 left-0 h-0.5 w-full bg-[rgb(231,111,81)] origin-left"
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: hoveredIndex === idx ? 1 : 0 }}
                 transition={{ duration: 0.25, ease: [0.25, 1, 0.5, 1] }}
@@ -75,7 +75,7 @@ export default function Navbar() {
             </a>
           ))}
 
-          {/* CTA Button */}
+          
           <a
             href="#contact"
             className="group relative inline-flex items-center gap-1.5 px-5 py-2.5 rounded-md text-sm font-medium bg-[#171717] text-white hover:bg-[#E76F51] transition-colors duration-300 font-heading shadow-xs overflow-hidden"
@@ -86,10 +86,10 @@ export default function Navbar() {
           </a>
         </nav>
 
-        {/* Mobile Hamburger Button */}
+        
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 rounded-md text-[#171717] hover:bg-[#E5E3DD]/40 focus:outline-none transition-colors"
+          className="md:hidden p-2 rounded-md text-[rgb(23,23,23)] hover:bg-line/40 focus:outline-none transition-colors"
           aria-label="Toggle Menu"
           data-cursor="Menu"
         >
@@ -97,7 +97,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Slide-In Fullscreen Overlay Menu */}
+    
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -105,7 +105,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
-            className="fixed inset-0 top-[60px] bg-[#F8F7F4] z-30 flex flex-col px-8 py-10 md:hidden border-t border-[#E5E3DD]"
+            className="fixed inset-0 top-15 bg-[rgb(248,247,244)] z-30 flex flex-col px-8 py-10 md:hidden border-t border-[#E5E3DD]"
           >
             <motion.div
               initial="closed"
@@ -130,10 +130,10 @@ export default function Navbar() {
                     open: { opacity: 1, x: 0 },
                     closed: { opacity: 0, x: -20 },
                   }}
-                  className="text-3xl font-bold font-heading text-[#171717] hover:text-[#E76F51] transition-colors flex items-center justify-between border-b border-[#E5E3DD]/60 pb-3"
+                  className="text-3xl font-bold font-heading text-[hsl(0,0%,9%)] hover:text-[rgb(231,111,81)] transition-colors flex items-center justify-between border-b border-[#E5E3DD]/60 pb-3"
                 >
                   <span>{link.name}</span>
-                  <ArrowUpRight className="w-6 h-6 text-[#E76F51]" />
+                  <ArrowUpRight className="w-6 h-6 text-[rgb(231,111,81)]" />
                 </motion.a>
               ))}
 
@@ -147,7 +147,7 @@ export default function Navbar() {
                 <a
                   href="#contact"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="w-full py-4 text-center rounded-md bg-[#E76F51] text-white font-bold font-heading text-lg shadow-md block"
+                  className="w-full py-4 text-center rounded-md bg-[rgb(231,111,81)] text-white font-bold font-heading text-lg shadow-md block"
                 >
                   Let's Talk
                 </a>
