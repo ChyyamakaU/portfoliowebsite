@@ -34,7 +34,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-24 md:py-32 bg-[#F8F7F4] relative overflow-hidden border-t border-[#E5E3DD]">
+    <section id="faq" className="py-24 md:py-32 bg-[rgb(248,247,244)] relative overflow-hidden border-t border-[rgb(229,227,221)]">
       <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
         
         {/* Header */}
@@ -45,14 +45,14 @@ export default function FAQ() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-semibold font-heading text-[#E76F51] uppercase tracking-widest inline-flex items-center gap-1.5">
+          <span className="text-xs font-semibold font-heading text-[rgb(231,111,81)] uppercase tracking-widest inline-flex items-center gap-1.5">
             <HelpCircle className="w-3.5 h-3.5" />
             Common Inquiries
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-[#171717] mt-2">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-[rgb(23,23,23)] mt-2">
             Frequently Asked Questions
           </h2>
-          <p className="text-base sm:text-lg text-[#6B6B6B] font-body mt-3">
+          <p className="text-base sm:text-lg text-[rgb(107,107,107)] font-body mt-3">
             Clear answers regarding technical scope, process, and working agreements.
           </p>
         </motion.div>
@@ -68,20 +68,20 @@ export default function FAQ() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.5, delay: idx * 0.08 }}
-                className="bg-white rounded-xl border border-[#E5E3DD] overflow-hidden shadow-2xs transition-all duration-300"
+                className="bg-white rounded-xl border border-[rgb(229,227,221)] overflow-hidden shadow-2xs transition-all duration-300"
               >
                 <button
                   onClick={() => toggleFAQ(idx)}
-                  className="w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-lg sm:text-xl text-[#171717] hover:text-[#E76F51] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E76F51]"
+                  className="w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-lg sm:text-xl text-[rgb(23,23,23)] hover:text-[rgb(231,111,81)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[rgb(231,111,81)]"
                   aria-expanded={isOpen}
                   data-cursor="Toggle"
                 >
                   <span className="flex items-center gap-3">
-                    <span className="text-xs font-mono text-[#E76F51]">0{idx + 1}.</span>
+                    <span className="text-xs font-mono text-[rgb(231,111,81)]">0{idx + 1}.</span>
                     <span>{faq.q}</span>
                   </span>
 
-                  <div className={`p-1.5 rounded-full border border-[#E5E3DD] transition-all duration-300 ${isOpen ? 'bg-[#E76F51] text-white rotate-180' : 'bg-[#F8F7F4] text-[#171717]'}`}>
+                  <div className={`p-1.5 rounded-full border border-[rgb(229,227,221)] transition-all duration-300 ${isOpen ? 'bg-[rgb(231,111,81)] text-white rotate-180' : 'bg-[rgb(248,247,244)] text-[rgb(23,23,23)]'}`}>
                     {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                   </div>
                 </button>
@@ -94,7 +94,7 @@ export default function FAQ() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                     >
-                      <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[#6B6B6B] font-body leading-relaxed border-t border-[#E5E3DD]/50">
+                      <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[rgb(107,107,107)] font-body leading-relaxed border-t border-line/50">
                         {faq.a}
                       </div>
                     </motion.div>
