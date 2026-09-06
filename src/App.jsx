@@ -1,7 +1,7 @@
-import React from 'react';
+import  "./App.css"
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Brands from './components/Brands';
+// import Brands from './components/Brands';
 import Story from './components/Story';
 import Services from './components/Services';
 import Process from './components/Process';
@@ -15,43 +15,42 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#F8F7F4] text-[#171717] font-body relative selection:bg-[#E76F51] selection:text-white">
-      {/* Sticky Blur Navigation */}
+    <div className="min-h-screen bg-[rgb(248,247,244)] text-[rgb(23,23,23)] font-body relative selection:bg-[rgb(231,111,81)] selection:text-white">
+     
       <Navbar />
 
-      {/* Main Content Flow */}
+    
       <main>
-        {/* Hero Section */}
+       
         <Hero />
 
-        {/* Brands & Collaborators Marquee */}
-        <Brands />
+      
+        {/* <Brands /> */}
 
-        {/* Developer's Story */}
+       
         <Story />
 
-        {/* Services Section ("What I Can Do") */}
+       
         <Services />
 
-        {/* Process Section ("My Way of Getting Things Done") */}
         <Process />
 
-        {/* Projects Section ("A Glimpse of My Work") */}
+     
         <Projects />
 
-        {/* Tech Stack ("Tools & Technologies") */}
+      
         <TechStack />
 
-        {/* Work Experience Timeline */}
+     
         <Experience />
 
-        {/* FAQ Section */}
+       
         <FAQ />
 
-        {/* Testimonials */}
+        
         <Testimonials />
 
-        {/* Contact Section ("Let's Build Something Great") */}
+      
         <Contact />
       </main>
 

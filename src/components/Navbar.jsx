@@ -78,7 +78,7 @@ export default function Navbar() {
           
           <a
             href="#contact"
-            className="group relative inline-flex items-center gap-1.5 px-5 py-2.5 rounded-md text-sm font-medium bg-[#171717] text-white hover:bg-[#E76F51] transition-colors duration-300 font-heading shadow-xs overflow-hidden"
+            className="group relative inline-flex items-center gap-1.5 px-5 py-2.5 rounded-md text-sm font-medium bg-[rgb(23,23,23)] text-white hover:bg-[rgb(231,111,81)] transition-colors duration-300 font-heading shadow-xs overflow-hidden"
             data-cursor="Contact"
           >
             <span>Let's Talk</span>
@@ -105,7 +105,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
-            className="fixed inset-0 top-15 bg-[rgb(248,247,244)] z-30 flex flex-col px-8 py-10 md:hidden border-t border-[#E5E3DD]"
+            className="fixed inset-0 top-15 bg-[rgb(248,247,244)] z-30 flex flex-col px-8 py-10 md:hidden border-t border-[rgb(229,227,221)]"
           >
             <motion.div
               initial="closed"
@@ -130,7 +130,7 @@ export default function Navbar() {
                     open: { opacity: 1, x: 0 },
                     closed: { opacity: 0, x: -20 },
                   }}
-                  className="text-3xl font-bold font-heading text-[hsl(0,0%,9%)] hover:text-[rgb(231,111,81)] transition-colors flex items-center justify-between border-b border-[#E5E3DD]/60 pb-3"
+                  className="text-3xl font-bold font-heading text-[hsl(0,0%,9%)] hover:text-[rgb(231,111,81)] transition-colors flex items-center justify-between border-b border-line/60 pb-3"
                 >
                   <span>{link.name}</span>
                   <ArrowUpRight className="w-6 h-6 text-[rgb(231,111,81)]" />
