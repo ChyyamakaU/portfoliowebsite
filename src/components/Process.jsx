@@ -13,7 +13,7 @@ const steps = [
     number: '02',
     title: 'Design & Architecture',
     icon: Layout,
-    description: 'Structuring system architecture, database schemas, and intuitive UI component systems before development begins.',
+    description: 'Structuring system architecture, Intuitive UI component systems before development begins.',
   },
   {
     number: '03',
@@ -25,19 +25,19 @@ const steps = [
     number: '04',
     title: 'Testing & Refinement',
     icon: CheckCircle,
-    description: 'Rigorous automated QA, smart contract security verification, performance tuning, and edge-case handling.',
+    description: ' performance tuning, and edge-case handling.',
   },
   {
     number: '05',
     title: 'Launch & Optimization',
     icon: Rocket,
-    description: 'Production deployment with zero downtime, real-time telemetry monitoring, and post-launch optimization.',
+    description: 'Production deployment with zero downtime, real-time monitoring, and post-launch optimization.',
   },
 ];
 
 export default function Process() {
   return (
-    <section className="py-24 md:py-32 bg-[#F8F7F4] bg-noise relative overflow-hidden border-t border-[#E5E3DD]">
+    <section className="py-24 md:py-32 bg-[rgb(248,247,244)] bg-noise relative overflow-hidden border-t border-[rgb(229,227,221)]">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         
         {/* Section Header */}
@@ -66,7 +66,7 @@ export default function Process() {
             transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-7"
           >
-            <p className="text-base sm:text-lg text-[#6B6B6B] font-body leading-relaxed border-l-2 border-[#171717] pl-6 bg-white/60 p-6 rounded-r-xl border-y border-r border-[#E5E3DD]">
+            <p className="text-base sm:text-lg text-[rgb(107,107,107)] font-body leading-relaxed border-l-2 border-[#e4e2dc] pl-6 bg-white/60 p-6 rounded-r-xl border-y border-r border-[#e4e2dc]">
               I build digital products with precision, scalability, and intent. Every decision is grounded in user behavior, aligned with business strategy, and executed to the highest visual and functional standards. From early discovery to post-launch optimization, I follow a structured process that transforms complex ideas into elegant, scalable experiences.
             </p>
           </motion.div>
@@ -74,7 +74,7 @@ export default function Process() {
         </div>
 
         {/* 5-Step Vertical/Grid Timeline */}
-        <div className="relative border-l-2 border-[#E5E3DD] ml-4 sm:ml-8 md:ml-12 pl-6 sm:pl-10 space-y-12">
+        <div className="relative border-l-2 border-[rgb(229,227,221)] ml-4 sm:ml-8 md:ml-12 pl-6 sm:pl-10 space-y-12">
           {steps.map((step, idx) => {
             const Icon = step.icon;
             return (
@@ -91,27 +91,27 @@ export default function Process() {
                 className="relative group"
               >
                 {/* Timeline Accent Node Dot */}
-                <div className="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-white border-2 border-[#E76F51] group-hover:bg-[#E76F51] transition-colors duration-300 flex items-center justify-center shadow-2xs">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#E76F51] group-hover:bg-white transition-colors" />
+                <div className="absolute -left-7.75 sm:-left-11.75 top-1.5 w-6 h-6 rounded-full bg-white border-2 border-[rgb(231,111,81)] group-hover:bg-[rgb(231,111,81)] transition-colors duration-300 flex items-center justify-center shadow-2xs">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[rgb(231,111,81)] group-hover:bg-white transition-colors" />
                 </div>
 
                 {/* Step Card Content */}
-                <div className="bg-white rounded-xl p-6 sm:p-8 border border-[#E5E3DD] hover:border-[#171717] shadow-2xs hover:shadow-md transition-all duration-300 max-w-3xl">
+                <div className="bg-white rounded-xl p-6 sm:p-8 border border-[rgb(229,227,221)] hover:border-[rgb(23,23,23)] shadow-2xs hover:shadow-md transition-all duration-300 max-w-3xl">
                   <div className="flex items-center justify-between gap-4 mb-3">
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl sm:text-3xl font-bold font-heading text-[#E76F51]">
+                      <span className="text-2xl sm:text-3xl font-bold font-heading text-[rgb(231,111,81)]">
                         {step.number}
                       </span>
-                      <h3 className="text-xl font-bold font-heading text-[#171717]">
+                      <h3 className="text-xl font-bold font-heading text-[rgb(23,23,23)]">
                         {step.title}
                       </h3>
                     </div>
-                    <div className="p-2 rounded-md bg-[#F8F7F4] text-[#171717] border border-[#E5E3DD]">
+                    <div className="p-2 rounded-md bg-[rgb(248,247,244)] text-[rgb(23,23,23)] border border-[rgb(229,227,221)]">
                       <Icon className="w-5 h-5" />
                     </div>
                   </div>
 
-                  <p className="text-sm sm:text-base text-[#6B6B6B] font-body leading-relaxed">
+                  <p className="text-sm sm:text-base text-[rgb(107,107,107)] font-body leading-relaxed">
                     {step.description}
                   </p>
                 </div>
