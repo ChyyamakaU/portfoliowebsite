@@ -9,7 +9,7 @@ import Process from './components/Process';
 import TechStack from './components/TechStack';
 import Experience from './components/Experience';
 import FAQ from './components/FAQ';
-import Testimonials from './components/Testimonials';
+// import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -48,7 +48,7 @@ function App() {
         <FAQ />
 
         
-        <Testimonials />
+        {/* <Testimonials /> */}
 
       
         <Contact />

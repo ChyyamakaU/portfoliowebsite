@@ -1,31 +1,28 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus, HelpCircle } from 'lucide-react';
 
 const faqs = [
   {
     q: 'What kind of projects do you take on?',
-    a: "I specialize in end-to-end full-stack web applications, decentralized blockchain dApps, smart contract systems, and cross-platform mobile apps. Whether it's building a complex web3 protocol or scaling a SaaS platform, I handle architecture to launch.",
+    a: "I specialize in frontEnd web applications.",
   },
   {
     q: 'Do you work with startups or only established companies?',
-    a: "I work with both! I love helping early-stage founders turn napkin sketches into production-grade MVPs, as well as collaborating with established teams to refactor legacy infrastructure or launch new web3 initiatives.",
+    a: "I work with both! I love helping early-stage founders turn sketches into production-grade MVPs, as well as collaborating with established teams.",
   },
   {
     q: "What's your typical project timeline?",
-    a: 'Scope dictates speed. A focused MVP or Web3 integration usually takes 2–4 weeks, while larger enterprise software suites range from 6–12 weeks. I operate in transparent sprints with weekly milestone demos.',
+    a: 'Scope dictates speed. A focused MVP usually takes 2–4 weeks, while larger enterprise software suites range from 6–12 weeks. I operate in transparent sprints with weekly milestone demos.',
   },
-  {
-    q: 'Do you build smart contracts / audit them?',
-    a: 'Yes, I write EVM-compatible Solidity smart contracts with automated test suites (Hardhat/Foundry) and integration hooks. For security, I run static analysis tooling (Slither, Mythril) and assist with external audit preparation.',
-  },
+  
   {
     q: 'How do we get started working together?',
-    a: "Drop me a message through the contact form or email me directly at olamide@oxbash.dev. We'll schedule a quick 20-minute discovery call to discuss your goals, scope, and technical roadmap.",
+    a: "Drop me a message through the contact form or email me directly at amakaumunna90@gmail.com. We'll schedule a quick 20-minute discovery call to discuss your goals, scope, and technical roadmap.",
   },
   {
     q: "What's your tech stack preference for new projects?",
-    a: 'For frontend web apps, React and Next.js paired with Tailwind CSS and Framer Motion. For backend services, Node.js with TypeScript and PostgreSQL. For Web3, Solidity, Ethers.js/Viem, and Wagmi.',
+    a: 'React and Next.js paired with Tailwind CSS and Framer Motion.',
   },
 ];
 
