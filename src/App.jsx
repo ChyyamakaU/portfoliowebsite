@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 import Story from './components/Story';
 import Services from './components/Services';
 import Process from './components/Process';
-import Projects from './components/Projects';
+// import Projects from './components/Projects';
 import TechStack from './components/TechStack';
 import Experience from './components/Experience';
 import FAQ from './components/FAQ';
@@ -36,7 +36,7 @@ function App() {
         <Process />
 
      
-        <Projects />
+        {/* <Projects /> */}
 
       
         <TechStack />
