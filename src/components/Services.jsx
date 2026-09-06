@@ -1,36 +1,16 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
-import { Layers, Server, Smartphone, Blocks, GitFork, Rocket, ArrowUpRight } from 'lucide-react';
+import { Layers, GitFork, Rocket, ArrowUpRight } from 'lucide-react';
 
 const services = [
   {
     id: '01',
-    title: 'Full Stack Development',
+    title: 'FrontEnd Development',
     icon: Layers,
-    description: 'Crafting high-performance end-to-end web applications with React, Next.js, and modern backends.',
+    description: 'Crafting high-performance end-to-end web applications with React and Next.JS.',
     tag: 'Web & Enterprise',
   },
-  {
-    id: '02',
-    title: 'Backend & API Development',
-    icon: Server,
-    description: 'Engineering resilient, low-latency microservices and RESTful/GraphQL APIs built for high throughput.',
-    tag: 'Node.js & Postgres',
-  },
-  {
-    id: '03',
-    title: 'Mobile Development',
-    icon: Smartphone,
-    description: 'Deploying cross-platform native iOS & Android applications with React Native.',
-    tag: 'Cross-Platform',
-  },
-  {
-    id: '04',
-    title: 'Web3 & Blockchain',
-    icon: Blocks,
-    description: 'Architecting gas-optimized smart contracts, dApps, and decentralized protocol integrations.',
-    tag: 'Solidity & EVM',
-  },
+  
   {
     id: '05',
     title: 'Clean Code Architecture',
@@ -49,7 +29,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 md:py-32 bg-[#F8F7F4] relative overflow-hidden border-t border-[#E5E3DD]">
+    <section id="services" className="py-24 md:py-32 bg-[rgb(248,247,244)] relative overflow-hidden border-t border-[rgb(229,227,221)]">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         
         {/* Section Title */}
@@ -60,14 +40,14 @@ export default function Services() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="mb-16 max-w-2xl"
         >
-          <span className="text-xs font-semibold font-heading text-[#E76F51] uppercase tracking-widest">
+          <span className="text-xs font-semibold font-heading text-[rgb(231,111,81)] uppercase tracking-widest">
             Core Capabilities
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-[#171717] mt-2">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-[hsl(0,0%,9%)] mt-2">
             What I Can Do
           </h2>
-          <p className="text-base sm:text-lg text-[#6B6B6B] font-body mt-3">
-            Delivering technical solutions with an emphasis on engineering excellence, speed, and clean user experience.
+          <p className="text-base sm:text-lg text-[rgb(107,107,107)] font-body mt-3">
+            Delivering technical solutions prioritising excellence, speed, and clean user experience.
           </p>
         </motion.div>
 
@@ -86,40 +66,39 @@ export default function Services() {
                   delay: index * 0.1,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className="group relative bg-white rounded-xl p-8 border border-[#E5E3DD] hover:border-[#E76F51] shadow-2xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between hover:-translate-y-1.5 cursor-pointer"
+                className="group relative bg-white rounded-xl p-8 border border-[rgb(229,227,221)] hover:border-[rgb(231,111,81)] shadow-2xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between hover:-translate-y-1.5 cursor-pointer"
                 data-cursor="Service"
               >
                 {/* Handcrafted Offset Border on Hover */}
-                <div className="absolute inset-0 rounded-xl border border-transparent group-hover:border-[#171717] transition-all duration-300 pointer-events-none group-hover:translate-x-1 group-hover:translate-y-1 -z-10 bg-white" />
+                <div className="absolute inset-0 rounded-xl border border-transparent group-hover:border-[rgb(23,23,23)] transition-all duration-300 pointer-events-none group-hover:translate-x-1 group-hover:translate-y-1 -z-10 bg-white" />
 
                 <div>
                   {/* Service Top Row */}
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-lg bg-[#F8F7F4] group-hover:bg-[#E76F51] text-[#171717] group-hover:text-white flex items-center justify-center border border-[#E5E3DD] group-hover:border-[#E76F51] transition-all duration-300">
+                    <div className="w-12 h-12 rounded-lg bg-[rgb(248,247,244)] group-hover:bg-[rgb(231,111,81)] text-[rgb(23,23,23)] group-hover:text-white flex items-center justify-center border border-[rgb(229,227,221)] group-hover:border-[rgb(231,111,81)] transition-all duration-300">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="text-xs font-mono font-bold text-[#6B6B6B] group-hover:text-[#E76F51] transition-colors">
+                    <span className="text-xs font-mono font-bold text-[rgb(107,107,107)] group-hover:text-[rgb(231,111,81)] transition-colors">
                       /{service.id}
                     </span>
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-bold font-heading text-[#171717] group-hover:text-[#E76F51] transition-colors duration-300">
+                  <h3 className="text-xl font-bold font-heading text-[rgb(23,23,23)] group-hover:text-[rgb(231,111,81)] transition-colors duration-300">
                     {service.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-sm text-[#6B6B6B] font-body mt-3 leading-relaxed">
+                  <p className="text-sm text-[rgb(107,107,107)] font-body mt-3 leading-relaxed">
                     {service.description}
                   </p>
                 </div>
 
-                {/* Bottom Tag */}
-                <div className="pt-6 mt-6 border-t border-[#E5E3DD] flex items-center justify-between">
-                  <span className="text-[11px] font-mono text-[#6B6B6B] uppercase tracking-wider">
+                <div className="pt-6 mt-6 border-t border-[rgb(229,227,221)] flex items-center justify-between">
+                  <span className="text-[11px] font-mono text-[rgb(107,107,107)] uppercase tracking-wider">
                     {service.tag}
                   </span>
-                  <ArrowUpRight className="w-4 h-4 text-[#6B6B6B] group-hover:text-[#E76F51] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <ArrowUpRight className="w-4 h-4 text-[rgb(107,107,107)] group-hover:text-[rgb(231,111,81)] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </div>
               </motion.div>
             );
